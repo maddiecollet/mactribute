@@ -44,7 +44,7 @@ grid-row-end: 5;
 /* ensures that your images stretch the width of their containers */
 
 .image1 {
-	width:100%;
+	width:650px;
 	height:850px;
 	display:block;
 	grid-column-start: 3;
