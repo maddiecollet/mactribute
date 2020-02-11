@@ -3,7 +3,7 @@
 body {
 	font-family: titling-gothic-fb-wide, sans-serif;
 	font-weight: 300;
-	font-size: 12pt;
+	font-size: 10pt;
 	font-style: normal;
 	line-height: 1.6;
 }
@@ -27,11 +27,6 @@ h2 {
 	font-size: 36px;
 }
 
-
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
 
 header {margin-bottom: 20px;}
 
@@ -59,13 +54,27 @@ a:hover { color: black; }
 	left: 80px;
 }
 
+
+
 .hero-grid .title {
 	position: absolute;
 	top: 100px;
 	left: 80px;
+	width:100%;
+	max-width:100%;
 }
 
+
+.page-2 .goodnews{
+	display:block;
+	fill:#fff;
+	margin-top:100px;
+	margin-left:20px;
+	width:100%;
+	position:absolute;
+}
 .page-2 {
+	padding:20px;
 	background-color:#312f2f;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -75,16 +84,17 @@ a:hover { color: black; }
 
 .page-2 .text{
 	color:#fff;
-
 	padding: 20px;
 	width: auto
 }
 
 .hoodie {
 	position:relative;
+	display:block;
 	margin-left: -100px;
 	margin-bottom:50px;
 }
+
 
 .sunset {
 	width: 70%;
@@ -94,7 +104,8 @@ a:hover { color: black; }
 	display:block;
 	margin-top: 50px;
 	margin-left: -100px;
-	width: 50%;
+	width:80%;
+	max-width:100%;
 }
 
 .page-3 {
@@ -105,11 +116,20 @@ a:hover { color: black; }
 	grid-gap: 20px;
 }
 
+.page-3 .circles{
+	display:block;
+	margin-top:100px;
+	margin-left:700px;
+	width:50%;
+	position:absolute;
+}
+
 .page-3 .text{
 	padding:50px;
 	width: 100%;
+	max-width:100%;
 	margin-top: 20px;
-	padding-left: 200px;
+	padding-left: 250px;
 }
 
 .lean {
@@ -122,12 +142,14 @@ a:hover { color: black; }
 	margin-top: -300px;
 	margin-left: 250px;
 	width:70%;
+	max-width:100%;
 }
 
 .horse {
-	display:block;
+
 	position:relative;
 	width: 70%;
+	max-width:100%;
 	margin-top:200px;
 	margin-left: 350px;
 }
@@ -144,7 +166,8 @@ width: 100%;
 
 .page-4 {
 	background-image: ("mac-red");
-	max-width: 100%;
+	background-color: #312f2f;
+	max-width: auto;
 	width: auto;
 }
 
@@ -155,21 +178,35 @@ width: 100%;
 }
 
 .ari-ig{
+
   max-width:70%;
   margin-top:-750px;
   margin-left:100px;
+
 }
 
+ .mac-studio{
+
+	margin-top: -500px;
+	margin-left: 450px;
+	width:65%;
+	margin-right:30px;
+}
+
+
+
 .page-4 .text{
-	margin-top: -975px;
+	margin-top: -900px;
   color:#fff;
 	margin-right:30px;
-	max-width: 100%;
+	max-width: 100vh;
 	min-width: 50%;
 	width:80%;
 }
 
 .page-5 {
+	width: auto;
+	height:auto;
 	padding:40px;
 	background-color:#312f2f;
 	display: grid;
@@ -179,13 +216,26 @@ width: 100%;
 
 .page-5 .text {
 	margin-top: 50px;
+	color:#fff;
+
 }
 
 
 
-
-
-
+.quote{
+	padding:20px;
+	padding-top: -30px;
+	background-color:#312f2f;
+	display:block;
+	margin-top:-50px;
+	width:100%;
+	font-family: titling-gothic-fb, sans-serif;
+	font-weight: 500;
+	font-size:40pt;
+	color: transparent;
+				-webkit-text-stroke: 3px #90142c;
+				text-shadow: none;
+}
 
 
 .homepage header {
@@ -193,8 +243,15 @@ width: 100%;
 }
 
 @media only screen and (min-width:768px) {
+.hero-grid div{
+	max-width:100%;
+}
+
+
 
 }
+
+
 
 @media only screen and (min-width:1224px) {
 
